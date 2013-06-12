@@ -1,0 +1,7 @@
+<h1>Coffee shop review app</h1>
+<p>Here's a list of coffeeshops others have reviewed</p>
+<% @coffeeshops.each do |cs| %>
+  <%= cs.name %> <%= link_to "See this review", cs %>
+<% end %>
+<p><%= link_to "Add your own review", new_coffeeshop_path %></p>
+

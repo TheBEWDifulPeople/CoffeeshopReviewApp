@@ -1,0 +1,11 @@
+<%= form_for @coffeeshop do |f| %>
+<fieldset>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :location %>
+  <%= f.text_field :location %>
+  <%= f.label :review %>
+  <%= f.text_area :review %>
+</fieldset>
+<%= f.submit "Add your review!" %>
+<% end %>
